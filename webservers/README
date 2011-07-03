@@ -8,6 +8,7 @@ I have always been annoyed with the default configurations that ship with web se
 - Avoiding modules unless they are absolutely needed.
 - Keeping configuration directives (somewhat) organized.
 - Timeless configuration where possible. 
+- Compatiblity with Debian's module managers.
 - Files that keep things running well enough to show them off.
 
-Hope these can help / inspire you!
+Of course, the apache one is a little older and runs as a site confitguration rather than a complete one at the moment. Hope these can help / inspire you!
