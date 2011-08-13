@@ -26,3 +26,7 @@ function his() {
 		history | grep "$@"
 	fi
 }
+
+function lsa() {
+	ls -a
+}
