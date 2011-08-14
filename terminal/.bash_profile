@@ -27,6 +27,10 @@ function his() {
 	fi
 }
 
-function lsa() {
+function la() {
 	ls -a
+}
+
+function ll() {
+	ls -al
 }
