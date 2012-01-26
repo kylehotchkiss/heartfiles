@@ -24,6 +24,6 @@ PATH="/usr/local/bin:$PATH"
 
 
 # Alias
-alias ls='ls -hF --color'
+alias ls='ls -hF --color --hide="*.pyc"'
 
 LC_COLLATE="C"
