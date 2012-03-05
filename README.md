@@ -15,5 +15,5 @@ Here's what I got:
 	- .gitconifg
 - webservers
 	- apache
-	-lighttpd.conf
+	- lighttpd.conf
 
