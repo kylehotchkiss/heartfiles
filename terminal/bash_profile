@@ -13,15 +13,9 @@ if [ "$TERM" != "dumb" ]; then
  else
   export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;32m\]\h \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
  fi
- 
- eval `dircolors ~/.dir_colors`
 fi
 
-# ---------------- #
-# Coreutils in OSX #
-# ---------------- #
-PATH="/usr/local/bin:$PATH"
-
-
-# Alias
-alias ls='ls -hF --color --hide="*.pyc"'
+# ------------------ #
+# Output Corrections #
+# ------------------ #
+LC_COLLATE=C; export LC_COLLATE
