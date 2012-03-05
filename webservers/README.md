@@ -1,4 +1,5 @@
-## Web Servers
+ Web Servers
+==========
 
 I have always been annoyed with the default configurations that ship with web servers. I like to have my web server software set up so specifically that I just rewrite it. Here's what I aim for:
 
@@ -11,4 +12,15 @@ I have always been annoyed with the default configurations that ship with web se
 - Compatiblity with Debian's module managers.
 - Files that keep things running well enough to show them off.
 
-Of course, the apache one is a little older and runs as a site confitguration rather than a complete one at the moment. Hope these can help / inspire you!
+With the Lighttpd configuration, you can easily make a `/srv` directory, throw in all your domain names and a `_default` directory and be set. With Apache, you can do the same, but everything that needs
+to point to `_default` needs a symbolic link unfortunatly. If you make the symbolic links anyways, the configuration should work cleanly between the two, given that you've enabled the same modules. I use 
+the `_default` for a Wordpress install that is used for many of my sites (needs config.php fix first). The default directory can really be anything though... but take advantage of it!
+
+The performance of the Lighttpd configuration makes me much more proud than the Apache one. Of course, lighttpd is not updated enough for me to recommend it as a production server anymore. As a toy or for 
+personal sites, it does such a great job without the overhead. I love fastcgi too. With PHP, always use xcache and with Wordpress sites be sure to use a filesystem based cached system to 
+keep everything running smoothly. 
+
+For static resources, I'd rather just throw things on S3 these days because it's free for me. These server configurations won't really do it for high-volume static resource servers or video serving. You'll
+need to configure more advanced runtime paramters for that and consider a strongly minimalistic approach towards server resource managment.
+
+Hope you enjoy!

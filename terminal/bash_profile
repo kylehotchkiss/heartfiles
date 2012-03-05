@@ -19,3 +19,5 @@ fi
 # Output Corrections #
 # ------------------ #
 LC_COLLATE=C; export LC_COLLATE
+
+alias ls='ls --color'
