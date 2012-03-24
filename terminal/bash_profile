@@ -20,4 +20,4 @@ fi
 # ------------------ #
 LC_COLLATE=C; export LC_COLLATE
 
-alias ls='ls --color'
+alias ls='ls -GF'
