@@ -15,21 +15,9 @@ if [ "$TERM" != "dumb" ]; then
  fi
 fi
 
-<<<<<<< HEAD
 # ------------------ #
 # Output Corrections #
 # ------------------ #
 LC_COLLATE=C; export LC_COLLATE
 
 alias ls='ls --color'
-=======
-# ---------------- #
-# Coreutils in OSX #
-# ---------------- #
-#PATH="/usr/local/bin:$PATH"
-
-
-# Alias
-alias ls='ls -hF --color --hide="*.pyc"'
-alias ssh='ssh -q' 
->>>>>>> ssh -q
