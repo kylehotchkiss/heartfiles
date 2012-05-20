@@ -24,4 +24,5 @@ fi
 # ------------------ #
 # Output Corrections #
 # ------------------ #
+HISTCONTROL=ignoreboth; export HISTCONTROL
 LC_COLLATE=C; export LC_COLLATE
