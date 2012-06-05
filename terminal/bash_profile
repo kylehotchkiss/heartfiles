@@ -4,21 +4,21 @@
 ## Settings work in both OSX and Linux.
 ##
 
+platform=`uname`
+
 # ----------------- #
 # Contextual Prompt #
 # ----------------- #
 if [ "$TERM" != "dumb" ]; then
- if [ "$SSH_CONNECTION" ]; then
-  export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;31m\]\H \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
+    if [ "$SSH_CONNECTION" ]; then
+        export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;31m\]\H \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
 
-  alias ls='ls -F --color'
+        alias ls='ls -F --color'
+    else
+        export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;32m\]\h \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
 
- else
-  export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;32m\]\h \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
-
-  alias ls='ls -GF'
-
- fi
+        alias ls='ls -GF'
+    fi
 fi
 
 # ------------------ #
