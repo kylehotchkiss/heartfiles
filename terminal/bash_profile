@@ -3,27 +3,36 @@
 ## Kyle Hotchkiss' Bash Configuration
 ## Settings work in both OSX and Linux.
 ##
-
 platform=`uname`
 
-# ----------------- #
-# Contextual Prompt #
-# ----------------- #
-if [ "$TERM" != "dumb" ]; then
-    if [ "$SSH_CONNECTION" ]; then
-        export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;31m\]\H \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
 
-        alias ls='ls -F --color'
-    else
-        export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;32m\]\h \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
-	export NODE_PATH="/usr/local/lib/node_modules"
+
+#######################
+## Contextual Prompt ##
+#######################
+if [ "$TERM" != "dumb" ]; then
+    export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;32m\]\h \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
+
+    if [ "$platform" == "Darwin" ]; then
+        export NODE_PATH="/usr/local/lib/node_modules"
 
         alias ls='ls -GF'
+
+    elif [ "$platform" == "Linux" ]; then
+        alias ls='ls -F --color'
+    fi
+
+    if [ "$SSH_CONNECTION" ]; then
+        export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;31m\]\H \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
     fi
 fi
 
-# ------------------ #
-# Output Corrections #
-# ------------------ #
-HISTCONTROL=ignoreboth; export HISTCONTROL
-LC_COLLATE=C; export LC_COLLATE
+
+
+######################## 
+## Output Corrections ##
+########################
+HISTCONTROL=ignoreboth;
+LC_COLLATE=C;
+
+export HISTCONTROL LC_COLLATE
