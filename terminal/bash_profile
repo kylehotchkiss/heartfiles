@@ -16,6 +16,7 @@ if [ "$TERM" != "dumb" ]; then
         alias ls='ls -F --color'
     else
         export PS1="\[\e[37m\]{ \[\e[0m\]\[\e[1;32m\]\h \[\e[37m\]} \[\e[34m\]\W\[\e[0m\]: "
+	export NODE_PATH="/usr/local/lib/node_modules"
 
         alias ls='ls -GF'
     fi
