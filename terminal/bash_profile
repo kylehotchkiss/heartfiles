@@ -36,3 +36,10 @@ HISTCONTROL=ignoreboth;
 LC_COLLATE=C;
 
 export HISTCONTROL LC_COLLATE
+
+
+
+###################################
+## Development Environemnt Setup ##
+###################################
+eval "$(rbenv init -)"
