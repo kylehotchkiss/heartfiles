@@ -1,0 +1,13 @@
+{
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
+	"font_face": "Espresso Mono",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage",
+		"SCSS"
+	],
+	"tree_animation_enabled": false
+}
