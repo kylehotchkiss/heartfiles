@@ -6,8 +6,8 @@
 	"font_size": 11,
 	"ignored_packages":
 	[
-		"Vintage",
-		"SCSS"
+		"Vintage"
 	],
-	"tree_animation_enabled": false
+	"tree_animation_enabled": false,
+	"overlay_scroll_bars": "enabled"
 }
