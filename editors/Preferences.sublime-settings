@@ -1,13 +1,19 @@
+/**
+ *
+ * Sublime Settings
+ * Kyle Hotchkiss
+ *
+ */
+
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
+	"theme": "Soda Light.sublime-theme",
 	"font_face": "Espresso Mono",
 	"font_size": 11,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
 	"tree_animation_enabled": false,
-	"overlay_scroll_bars": "enabled"
+	"overlay_scroll_bars": "system",
+
+	"ignored_packages": [ "Vintage" ]
 }
