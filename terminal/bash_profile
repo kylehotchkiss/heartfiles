@@ -6,7 +6,6 @@
 platform=`uname`
 
 
-
 #######################
 ## Contextual Prompt ##
 #######################
@@ -28,7 +27,6 @@ if [ "$TERM" != "dumb" ]; then
 fi
 
 
-
 ######################## 
 ## Output Corrections ##
 ########################
@@ -38,11 +36,19 @@ LC_COLLATE=C;
 export HISTCONTROL LC_COLLATE
 
 
-
 ###################################
 ## Development Environemnt Setup ##
 ###################################
 eval "$(rbenv init -)"
 
-### Added by the Heroku Toolbelt
+
+#############################
+## Web Development Helpers ##
+#############################
+alias localhost='python -m SimpleHTTPServer'
+
+
+############################
+## Various Path Overrides ##
+############################
 export PATH="/usr/local/heroku/bin:$PATH"

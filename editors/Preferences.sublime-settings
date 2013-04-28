@@ -1,19 +1,17 @@
-/**
- *
- * Sublime Settings
- * Kyle Hotchkiss
- *
- */
-
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
-	"theme": "Soda Light.sublime-theme",
 	"font_face": "Espresso Mono",
-	"font_size": 11,
-	"tree_animation_enabled": false,
+	"font_size": 11.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"overlay_scroll_bars": "system",
-
-	"ignored_packages": [ "Vintage" ]
+	"tab_size": 4,
+	"theme": "Soda Light.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"tree_animation_enabled": false,
+	"trim_trailing_white_space_on_save": true
 }
