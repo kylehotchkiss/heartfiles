@@ -9,6 +9,8 @@ terminal files to make the terminal more fun. Yeah, seriously!
 
 Here's what I got:
 
+- editors 
+    - Preferences.sublime-settings
 - terminal
 	- .bash_profile
 	- .dir_colors
