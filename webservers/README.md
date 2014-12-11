@@ -24,3 +24,7 @@ For static resources, I'd rather just throw things on S3 these days because it's
 need to configure more advanced runtime paramters for that and consider a strongly minimalistic approach towards server resource managment.
 
 Hope you enjoy!
+
+## 2014 Update
+
+Works great with [DNSMasq](http://passingcuriosity.com/2013/dnsmasq-dev-osx/)
