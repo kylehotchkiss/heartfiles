@@ -1,0 +1,37 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.minimap.enabled": false,
+    "editor.scrollBeyondLastLine": false,
+    "editor.fontFamily": "'Source Code Pro', monospace",    
+    "editor.renderWhitespace": "boundary",
+    
+    "workbench.tips.enabled": false,    
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Atom One Light",
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/.next": true,
+        "**/yarn.lock": true
+    },
+
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.next": true
+    },
+
+    "search.exclude": {
+        "**/.next": true,
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+    
+}
