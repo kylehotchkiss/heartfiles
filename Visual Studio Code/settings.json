@@ -8,7 +8,7 @@
     "workbench.tips.enabled": false,    
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Atom One Light",
+    "workbench.colorTheme": "One Dark Pro",
 
     "files.exclude": {
         "**/.git": true,
@@ -33,5 +33,5 @@
         "**/node_modules": true,
         "**/bower_components": true
     },
-    
+    "workbench.startupEditor": "newUntitledFile",   
 }
